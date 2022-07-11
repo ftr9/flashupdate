@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-[#212529] to-[#080808] text-white;
+  }
+}
+
+@layer components {
+  .modalListNum {
+    @apply mr-4 block h-3 w-3 rounded-sm bg-black text-center text-[12px];
+  }
+  .modalListEl {
+    @apply flex items-center;
+  }
+  .rulesModal {
+    @apply fixed top-1/2 left-1/2  z-50 w-[95%] -translate-x-1/2 -translate-y-1/2 rounded-md bg-gradient-to-br from-pink-500 to-[#d22929] px-2 py-4 sm:p-10;
+  }
+}
